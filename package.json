@@ -1,0 +1,23 @@
+{
+  "name": "learn-you-some-js",
+  "version": "1.0.0",
+  "description": "Short tutorials for learning various JavaScript Concepts",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briandennis/LearnYouSomeJS.git"
+  },
+  "author": "Brian Dennis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/briandennis/LearnYouSomeJS/issues"
+  },
+  "homepage": "https://github.com/briandennis/LearnYouSomeJS#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
