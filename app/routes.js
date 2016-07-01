@@ -1,7 +1,7 @@
 module.exports = (app) => {
 
-  const router = require('express').Router();
+  return require('express').Router()
 
-  router.get('/', require('/app/endpoints/root') );
-
+  .get('/', require('./endpoints/root') );
+  
 };
