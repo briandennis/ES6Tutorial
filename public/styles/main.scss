@@ -1,5 +1,22 @@
-body {
-  background: purple;
-  color: white;
-  font-size: 20px;
+$main: #F0DB4F;
+$accent: #3D5A80;
+$dark: #323330;
+$light: #F1F2EB;
+
+.nav {
+  background: $main ;
+
+  #title {
+    color: $dark;
+    font-size: 20px;
+    font-weight: 600;
+
+    padding-left: 20px;
+  }
+
+  .nav-item {
+    color: $dark;
+    font-weight: 500;
+    font-size: 15px;
+  }
 }
