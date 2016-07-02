@@ -5,6 +5,12 @@ $light: #F1F2EB;
 
 $font: 'Open Sans';
 
+@mixin vCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 html {
   //background: $main;
 }
@@ -39,7 +45,35 @@ body {
   background: $main;
   p {
     color: $dark;
-    font-weight: 600;  
+    font-weight: 600;
   }
   text-align: center;
+}
+
+#indexContainer {
+  height: 90vh;
+  color: $dark;
+  @include vCenter;
+
+  #placeholder {
+    text-align: center;
+    @include vCenter;
+
+    img {
+      height: 150px;
+      border-radius: 50%;
+      border: solid 2px $dark;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      width: 60%;
+      margin-bottom: 20px;
+    }
+  }
 }
