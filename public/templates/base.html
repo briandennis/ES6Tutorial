@@ -3,8 +3,18 @@
 <html>
 
   <head>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.css' rel='stylesheet' type='text/css' />
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+    <link rel="icon" type="image/png" href="img/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="img/favicon-128.png" sizes="128x128" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.1.0/css/bulma.css" rel="stylesheet" type="text/css" />
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link href='css/main.css' rel='stylesheet' type='text/css' />
   </head>
 
@@ -16,6 +26,11 @@
           <span id="title">Learn You Some JS</span>
         </a>
       </div>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
       <div class="nav-right nav-menu">
         <a class="nav-item" href="#">Catalog</a>
         <a class="nav-item" href="#">About</a>
@@ -24,6 +39,17 @@
     </nav>
 
     {% block content %}
+    {% endblock %}
+
+    <footer class="columns">
+      <div id="footer" class="column">
+        <p>
+          Learn You Some JS &copy;
+        </p>
+      </div>
+    </footer>
+
+    {% block scripts %}
     {% endblock %}
 
   </body>
